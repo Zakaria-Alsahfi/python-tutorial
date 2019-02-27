@@ -1,12 +1,12 @@
 # Lists
-courses = ['History','Math','Physics','CompSci']
-courses_2 = ['Education','Religion']
+courses = ['History', 'Math', 'Physics', 'CompSci']
+courses_2 = ['Education', 'Religion']
 print(courses)
 print(len(courses))
 print(courses[:4])
 print(courses[-1])
 
-#List Methoud
+# List Methoud
 courses.append('Art')
 courses.insert(0, 'Computer')
 courses.extend(courses_2)
@@ -21,9 +21,9 @@ print(courses)
 # sort a List
 courses.reverse()
 print(courses)
-nums = [1,5,2,4,3]
+nums = [1, 5, 2, 4, 3]
 nums.sort()
-nums.sort(reverse = True)
+nums.sort(reverse=True)
 sorted_coueses = sorted(courses)
 print(nums)
 print(sorted_coueses)
@@ -41,18 +41,18 @@ print('Art' in courses)
 
 # for loop
 for course in courses:
-	print(course)
+  print(course)
 
-#print value with index number
-for index, course in enumerate(courses,  start = 1):
-	print(index, course)
+# print value with index number
+for index, course in enumerate(courses, start=1):
+  print(index, course)
 
-#turn List into String
+# turn List into String
 courses_str = ' - '.join(courses)
 new_list = courses_str.split(' - ')
 print(courses_str)
 print(new_list)
 
-
-
-
+# Create an Empty Lists
+empty_list = []
+empty_list = list()
